@@ -40,7 +40,6 @@ const Header = () => {
             console.error(err);
          }
       };
-
       const getHeight = () => {
          if (dropdown.current && isMobileView) {
             const height = dropdown.current.scrollHeight;
@@ -137,17 +136,17 @@ const Header = () => {
                   </li>
                   <li className="relative">
                      <button
-                        className="text-white"
+                        className="text-white hidden lg:block"
                         onClick={() => setShowForm(!showForm)}
                      >
                         Search
                      </button>
                      <form
                         action="#"
-                        className={`absolute top-full right-0 transition-opacity ${
+                        className={`lg:absolute lg:top-full lg:right-0 lg:transition-opacity ${
                            showForm
-                              ? 'opacity-100 visible'
-                              : 'opacity-0 invisible'
+                              ? 'lg:opacity-100 lg:visible'
+                              : 'lg:opacity-0 lg:invisible'
                         }`}
                         onSubmit={handleSearch}
                      >
@@ -167,7 +166,7 @@ const Header = () => {
                </ul>
             </nav>
             <button onClick={() => setShowNav(!showNav)} className="lg:hidden">
-               <IoMenuOutline />
+               <IoMenuOutline className="text-3xl" />
             </button>
          </div>
       </header>

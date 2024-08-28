@@ -7,8 +7,9 @@ import './index.scss';
 import Movies from './pages/movies/Movies';
 import Shows from './pages/shows/Shows';
 import Search from './pages/search/Search';
-import DetailsPage from './pages/DetailsPage.tsx';
+import DetailsPage from './pages/DetailsPage';
 import Genres from './pages/Genres';
+import NotFound from './pages/NotFound';
 
 const router = createBrowserRouter([
    {
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
          {
             path: '/genre/:query/:id',
             element: <Genres />,
+         },
+         {
+            path: '*',
+            element: <NotFound />,
          },
       ],
    },
