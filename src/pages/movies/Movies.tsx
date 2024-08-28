@@ -53,7 +53,7 @@ const Movies = () => {
    return (
       <section className="py-28">
          <div className="container">
-            <h1 className="mb-10 font-medium text-3xl">Tv shows</h1>
+            <h1 className="mb-10 font-medium text-3xl">Movies</h1>
             <div className="grid-row">
                {result?.results?.map(
                   ({
@@ -77,8 +77,8 @@ const Movies = () => {
             <Pagination
                activePage={activePage}
                totalPages={totalPage}
-               handleDecrement={() => handleDecrement}
-               handleIncrement={() => handleIncrement}
+               handleDecrement={() => handleDecrement()}
+               handleIncrement={() => handleIncrement()}
             />
          </div>
       </section>

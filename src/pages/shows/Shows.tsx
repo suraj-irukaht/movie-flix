@@ -50,8 +50,6 @@ const Shows = () => {
       }
    };
 
-   console.log(result);
-
    return (
       <section className="py-28">
          <div className="container">
@@ -79,8 +77,8 @@ const Shows = () => {
             <Pagination
                activePage={activePage}
                totalPages={totalPage}
-               handleDecrement={() => handleDecrement}
-               handleIncrement={() => handleIncrement}
+               handleDecrement={() => handleDecrement()}
+               handleIncrement={() => handleIncrement()}
             />
          </div>
       </section>

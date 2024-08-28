@@ -104,9 +104,9 @@ const Header = () => {
                               ref={dropdown}
                            >
                               {genres.map(({ id, name }) => (
-                                 <li key={id} className="">
+                                 <li key={id}>
                                     <Link
-                                       className="text-white hover:text-blue-100"
+                                       className="text-white hover:text-blue-100 lg:hover:text-white/60"
                                        to={`/genre/${encodeURIComponent(
                                           name
                                        )}/${id}`}

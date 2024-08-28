@@ -35,8 +35,6 @@ const Genres = () => {
 
    if (state.isLoading) return <Loader />;
 
-   console.log(state.showsGenre);
-
    return (
       <section className="pt-28">
          <div className="container">
